@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red; */
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.1rem;
+    box-shadow: 10px 10px 10px rgba(65, 65, 65, 0.37);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: hidden;
+}
+
+input:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+
+button{
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 135, 0);
+    font-size: 1.2rem;
+    color: white;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(199, 113, 0);
+}
+button:active{
+    color: black;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.weather-info p{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+img{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 2px solid rgb(255, 119, 0);
+}
