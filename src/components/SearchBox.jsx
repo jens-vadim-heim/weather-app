@@ -1,12 +1,10 @@
 export default function SearchBox({ query, setQuery, setData }) {
-  const apiKey = import.meta.env.VITE_API_KEY;
-
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!query.trim()) return;
     try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=metric`
+        `/api/weather?location=${encodeURIComponent(query)}`
       );
       const json = await res.json();
       if (json.cod !== 200) {
